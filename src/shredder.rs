@@ -1,3 +1,4 @@
+//! Encodes input bytes into checksummed data and Reed–Solomon coding shreds.
 use reed_solomon_erasure::galois_8::ReedSolomon;
 
 use crate::error::Error;
