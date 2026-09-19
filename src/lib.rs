@@ -1,3 +1,9 @@
 mod error;
-pub mod shredder;
-pub mod validator;
+mod reconstructor;
+mod shredder;
+mod validator;
+
+pub use error::*;
+pub use reconstructor::*;
+pub use shredder::*;
+pub use validator::*;
