@@ -171,6 +171,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
 
 [[package]]
+name = "shred-codec"
+version = "0.1.0"
+dependencies = [
+ "crc32fast",
+ "reed-solomon-erasure",
+ "thiserror",
+]
+
+[[package]]
 name = "smallvec"
 version = "1.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -211,15 +220,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
-]
-
-[[package]]
-name = "turbine"
-version = "0.1.0"
-dependencies = [
- "crc32fast",
- "reed-solomon-erasure",
- "thiserror",
 ]
 
 [[package]]
